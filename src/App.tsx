@@ -1,9 +1,12 @@
-import { css } from '../styled-system/css';
-
+import { Box } from '@styled-system/jsx'
 function App() {
 
   return (
-    <div className={css({ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "100%", fontSize: "2xl", fontWeight: 'bold', textAlign: "center" })}>Hello 🐼!</div>
+    <>
+    {/* 2つのカラーコード */}
+    <Box alignItems="center" color="red" >Hello 🐼!</Box>
+    <Box alignItems="center"  color="var(--colors-red)">Hello 🐼!</Box>
+    </>
   )
 }
 
